@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Zsofia Sztupinszki</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VKQXKCJVND');
+    </script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Fixed Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-lg font-medium">Zsofia Sztupinszki, M.D., Ph.D.</a>
+                <nav>
+                    <ul class="flex space-x-6 text-sm">
+                        <li><a href="index.html" class="hover:underline">← Back to Main Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-3xl font-bold mb-12">Outdoor Activities</h1>
+            
+            <!-- Winter Hiking -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-semibold mb-8">Winter Hiking</h2>
+                <div class="space-y-6">
+                    <div class="prose max-w-none">
+                        <p>As a Winter Hiking Leader at MIT Outing Club (MITOC), I lead groups in the White Mountains 
+                           and share my passion for winter outdoor activities.</p>
+                    </div>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <img src="images/PXL_20221231_182607570.jpg" alt="Winter hiking in White Mountains" 
+                                 class="w-full h-64 object-cover rounded-lg">
+                            <p class="text-sm text-gray-600">Mount Washington, Winter 2023</p>
+                        </div>
+                        <div class="space-y-2">
+                            <img src="images/IMG_2871.JPG" alt="Summit view" 
+                                 class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cycling -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-semibold mb-8">Road Cycling</h2>
+                <div class="space-y-6">
+                    <div class="prose max-w-none">
+                        <p>Cycling has been my passion for many years, covering 3000-4000 km annually.</p>
+                    </div>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <img src="images/IMG_2072.JPG" alt="Road cycling" 
+                                 class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                        <div class="space-y-2">
+                            <img src="images/IMG_2367.JPG" alt="Scenic route" 
+                                 class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 py-6 border-t">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <p class="text-sm text-gray-500">
+                © 2025 Zsofia Sztupinszki | 
+                <a href="privacy-terms.html" class="hover:underline">Privacy Policy & Terms</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-md flex justify-between items-center z-50">
+        <p class="text-sm mr-4">This website uses cookies to ensure you get the best experience. <a href="privacy-terms.html" class="underline">Learn more</a></p>
+        <button id="accept-cookies" class="bg-blue-600 text-white px-4 py-2 text-sm rounded">Accept</button>
+    </div>
+
+    <script>
+        // Simple cookie consent management
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
