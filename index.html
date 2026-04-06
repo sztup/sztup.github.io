@@ -7,12 +7,13 @@
 
     <!-- SEO Meta -->
     <meta name="description" content="Research Fellow at Harvard Medical School and Boston Children's Hospital. Cancer genomics, DNA repair, HRD, precision medicine, and TCGA Explorer.">
-    <link rel="canonical" href="https://sztup.github.io/index.html">
+    <link rel="canonical" href="https://sztup.github.io/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Zsofia Sztupinszki, M.D., Ph.D.">
     <meta property="og:title" content="Zsofia Sztupinszki, M.D., Ph.D. — Cancer Genomics Researcher">
     <meta property="og:description" content="Research Fellow at Harvard Medical School and Boston Children's Hospital. Cancer genomics, DNA repair, HRD, precision medicine, and TCGA Explorer.">
-    <meta property="og:url" content="https://sztup.github.io/index.html">
+    <meta property="og:url" content="https://sztup.github.io/">
     <meta property="og:image" content="https://sztup.github.io/images/PhotoCV.jpg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
@@ -21,13 +22,17 @@
     <meta name="twitter:description" content="Research Fellow at Harvard Medical School and Boston Children's Hospital. Cancer genomics, DNA repair, HRD, precision medicine, and TCGA Explorer.">
     <meta name="twitter:image" content="https://sztup.github.io/images/PhotoCV.jpg">
 
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" as="image" href="images/IMG_7626_3.webp" type="image/webp" fetchpriority="high">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 
     <style>
         :root {
@@ -101,16 +106,7 @@
         .prose li { margin-bottom: 0.4rem; }
     </style>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VKQXKCJVND');
-    </script>
-
-    <!-- Schema.org Person -->
+    <!-- Schema.org: Person -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -118,20 +114,126 @@
         "name": "Zsofia Sztupinszki",
         "honorificSuffix": "M.D., Ph.D.",
         "jobTitle": "Research Fellow",
+        "description": "Cancer genomics researcher at Harvard Medical School specializing in DNA repair deficiencies, homologous recombination deficiency, and precision oncology.",
         "worksFor": [
-            {"@type":"Organization","name":"Harvard Medical School"},
-            {"@type":"Organization","name":"Boston Children's Hospital"},
-            {"@type":"Organization","name":"Danish Cancer Institute"}
+            {"@type":"Organization","name":"Harvard Medical School","url":"https://hms.harvard.edu/"},
+            {"@type":"Organization","name":"Boston Children's Hospital","url":"https://www.childrenshospital.org/"},
+            {"@type":"Organization","name":"Danish Cancer Institute","url":"https://www.cancer.dk/"}
         ],
         "address": {"@type":"PostalAddress","addressLocality":"Boston","addressRegion":"MA","addressCountry":"US"},
         "url": "https://sztup.github.io/",
-        "image": "https://sztup.github.io/images/PhotoCV.jpg",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://sztup.github.io/images/PhotoCV.jpg",
+            "width": 400,
+            "height": 400
+        },
+        "knowsAbout": [
+            "Cancer Genomics","DNA Repair Deficiency","Homologous Recombination Deficiency",
+            "Precision Medicine","Machine Learning in Oncology","Biomarker Discovery",
+            "NGS Data Analysis","Cancer Immunology","Mutational Signatures","TCGA Analysis"
+        ],
+        "award": "Best Poster Award, DF/HCC Breast and Gynecologic Cancer Symposium, 2024",
         "sameAs": [
             "https://scholar.google.com/citations?user=ZNe91SwAAAAJ",
             "https://www.linkedin.com/in/zsofia-sztupinszki/",
-            "https://connects.catalyst.harvard.edu/Profiles/profile/164664481"
+            "https://connects.catalyst.harvard.edu/Profiles/profile/164664481",
+            "https://github.com/sztup",
+            "https://orcid.org/0000-0002-8691-4086"
         ]
     }
+    </script>
+
+    <!-- Schema.org: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Zsofia Sztupinszki, M.D., Ph.D.",
+        "url": "https://sztup.github.io/",
+        "description": "Personal academic portfolio of Zsofia Sztupinszki — cancer genomics researcher at Harvard Medical School.",
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+    }
+    </script>
+
+    <!-- Schema.org: SoftwareApplication — TCGA Explorer -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TCGA Explorer",
+        "url": "https://cancergeneanalytics.com/",
+        "applicationCategory": "Scientific Software",
+        "operatingSystem": "Any (web-based)",
+        "description": "Free, browser-based platform for no-code pan-cancer genomics research across all 30 TCGA cancer types. Analyses include gene expression, survival (Cox regression, Kaplan-Meier), immune infiltration, mutational signatures (COSMIC v2/v3/Indel), DESeq2 differential expression with GSEA, and ssGSEA pathway enrichment.",
+        "featureList": [
+            "Pan-cancer gene expression analysis across 30 TCGA cohorts plus GTEx normals",
+            "Cox regression and Kaplan-Meier survival curves across 4 endpoints (OS/DSS/DFI/PFI)",
+            "Immune infiltration scoring via TIMER2.0 and mutational signature analysis (COSMIC v2/v3/Indel)",
+            "DESeq2 differential expression with GSEA pathway enrichment",
+            "ssGSEA pan-cancer pathway enrichment explorer"
+        ],
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"}
+    }
+    </script>
+
+    <!-- Schema.org: SoftwareApplication — scarHRD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "scarHRD",
+        "url": "https://github.com/sztup/scarHRD",
+        "applicationCategory": "Scientific Software",
+        "programmingLanguage": "R",
+        "description": "Open-source R package for estimating homologous recombination deficiency (HRD) from tumor sequencing data. Implements HRD-LOH, LST, and TAI metrics. Cited in over 160 publications.",
+        "codeRepository": "https://github.com/sztup/scarHRD",
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"}
+    }
+    </script>
+
+    <!-- Schema.org: ScholarlyArticle blocks -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            "headline": "Comparative Assessment of Diagnostic Homologous Recombination Deficiency associated mutational signatures in ovarian cancer",
+            "url": "https://doi.org/10.1158/1078-0432.CCR-21-0981",
+            "datePublished": "2021",
+            "isPartOf": {"@type":"Periodical","name":"Clinical Cancer Research"},
+            "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            "headline": "ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer",
+            "url": "https://www.nature.com/articles/s43018-023-00591-2",
+            "datePublished": "2023",
+            "isPartOf": {"@type":"Periodical","name":"Nature Cancer"},
+            "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            "headline": "Detection of Molecular Signatures of Homologous Recombination Deficiency in Prostate Cancer with or without BRCA1/2 Mutations",
+            "url": "https://aacrjournals.org/clincancerres/article/26/11/2673/284540/Detection-of-Molecular-Signatures-of-Homologous",
+            "datePublished": "2020",
+            "isPartOf": {"@type":"Periodical","name":"Clinical Cancer Research"},
+            "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            "headline": "Cross-reactivity between tumor MHC class I-restricted antigens and an enterococcal bacteriophage",
+            "url": "https://www.science.org/doi/10.1126/science.aax0701",
+            "datePublished": "2020",
+            "isPartOf": {"@type":"Periodical","name":"Science"},
+            "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+        }
+    ]
     </script>
 </head>
 <body class="min-h-screen bg-white">
@@ -141,7 +243,7 @@
             <div class="flex justify-between items-center">
                 <a href="index.html" style="font-family:'Playfair Display',serif;color:#e1dfdb;" class="text-lg font-bold tracking-wide">Zsofia Sztupinszki, M.D., Ph.D.</a>
 
-                <label for="nav-toggle" class="md:hidden cursor-pointer text-white" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="md:hidden cursor-pointer text-white p-3 -mr-3" aria-label="Toggle navigation">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -167,7 +269,10 @@
 
     <!-- Hero Section -->
     <div id="top" class="relative w-full" style="height: 520px; margin-top: 56px;">
-        <img src="images/IMG_7626_3.JPG" alt="Winter mountain summit view — research meets nature" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover object-top">
+        <picture>
+            <source srcset="images/IMG_7626_3.webp" type="image/webp">
+            <img src="images/IMG_7626_3.JPG" alt="Winter mountain summit view — research meets nature" width="1200" height="900" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover object-top">
+        </picture>
         <div class="absolute inset-0" style="background: rgba(27,27,27,0.58);"></div>
         <div class="absolute" style="top: 28px; left: 28px; right: 28px; bottom: 28px; border: 6px solid rgba(255,255,255,0.82); pointer-events: none;"></div>
         <div class="absolute inset-0 flex flex-col justify-end px-12 pb-12 md:px-16 md:pb-14">
@@ -193,10 +298,14 @@
 
             <!-- About Section -->
             <section id="about" class="section-anchor mb-24">
+                <h2 class="sr-only">About Zsofia Sztupinszki</h2>
                 <div class="flex flex-col md:flex-row gap-12 items-start">
                     <!-- Profile Photo -->
                     <div class="md:w-1/3 flex-shrink-0">
-                        <img src="images/PhotoCV.jpg" alt="Zsofia Sztupinszki, M.D., Ph.D. — Research Fellow at Harvard Medical School" width="400" height="400" loading="eager" class="w-full rounded-none shadow-lg" style="border: 1px solid var(--cream);">
+                        <picture>
+                            <source srcset="images/PhotoCV.webp" type="image/webp">
+                            <img src="images/PhotoCV.jpg" alt="Zsofia Sztupinszki, M.D., Ph.D. — Research Fellow at Harvard Medical School" width="400" height="400" loading="eager" class="w-full rounded-none shadow-lg" style="border: 1px solid var(--cream);">
+                        </picture>
                     </div>
 
                     <!-- Info Column -->
@@ -246,10 +355,9 @@
                             </a>
                         </div>
 
-                        <!-- Bio paragraphs -->
+                        <!-- Bio -->
                         <div class="prose">
-                            <p>Research Fellow at Harvard Medical School and Boston Children's Hospital, working in translational cancer research and personalized medicine.</p>
-                            <p>With a unique combination of medical expertise and computational skills, I develop innovative methods to identify high-risk patients or patients more likely to respond to certain treatments.</p>
+                            <p>Zsofia Sztupinszki, M.D., Ph.D., is a Research Fellow at Harvard Medical School and Boston Children's Hospital (Computational Health Informatics Program), and an affiliate researcher at the Danish Cancer Institute. She is a physician-scientist specializing in cancer genomics, DNA repair deficiencies, and precision medicine. Her work focuses on identifying homologous recombination deficiency (HRD) and nucleotide excision repair (NER) defects through computational and statistical methods, and translating these findings into clinical biomarkers. She developed the scarHRD R package for HRD estimation from tumor sequencing, which has been cited in over 160 publications, and created TCGA Explorer, a no-code platform enabling pan-cancer analysis across all 30 TCGA cancer types. As of 2025, she has authored 47 peer-reviewed publications, accumulated 1,561 citations, and holds an h-index of 22 (Google Scholar). She holds patent WO2021195390A2 for a method for treating cancer.</p>
                         </div>
 
                         <!-- Consolidated expertise bullets -->
@@ -312,7 +420,7 @@
                             <h3 class="text-2xl font-bold mb-1" style="font-family: 'Playfair Display', serif; color: var(--text);">TCGA Explorer</h3>
                             <p class="text-sm uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif; letter-spacing: 0.1em;">No-Code Cancer Genomics Platform</p>
                         </div>
-                        <a href="https://cancergeneanalytics.com/magic/" target="_blank" rel="noopener noreferrer" class="btn-dark" style="align-self: flex-start; white-space: nowrap;">Open App ↗</a>
+                        <a href="https://cancergeneanalytics.com/" target="_blank" rel="noopener noreferrer" class="btn-dark" style="align-self: flex-start; white-space: nowrap;">Open App ↗</a>
                     </div>
 
                     <p class="mb-6" style="font-family: 'Open Sans', sans-serif; color: var(--text); line-height: 1.75;">
@@ -378,7 +486,7 @@
 
                     <article>
                         <h3 class="text-lg font-semibold leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                            <a href="https://www.nature.com/articles/s43018-023-00591-2" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                 ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer
                             </a>
                         </h3>
@@ -389,7 +497,7 @@
 
                     <article>
                         <h3 class="text-lg font-semibold leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                            <a href="https://aacrjournals.org/clincancerres/article/26/11/2673/284540/Detection-of-Molecular-Signatures-of-Homologous" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                 Detection of Molecular Signatures of Homologous Recombination Deficiency in Prostate Cancer with or without BRCA1/2 Mutations
                             </a>
                         </h3>
@@ -400,7 +508,7 @@
 
                     <article>
                         <h3 class="text-lg font-semibold leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                            <a href="https://www.science.org/doi/10.1126/science.aax0701" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                 Cross-reactivity between tumor MHC class I-restricted antigens and an enterococcal bacteriophage
                             </a>
                         </h3>
@@ -431,7 +539,7 @@
     <!-- Footer -->
     <footer style="border-top:1px solid var(--cream);" class="mt-24 py-8">
         <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm" style="font-family:'Open Sans',sans-serif; color:var(--muted);">
-            <p>© 2025 Zsofia Sztupinszki, M.D., Ph.D.</p>
+            <p>© 2026 Zsofia Sztupinszki, M.D., Ph.D.</p>
             <nav aria-label="Footer navigation">
                 <ul class="flex gap-4 list-none">
                     <li><a href="index.html" style="color:var(--muted);" class="hover:underline">Home</a></li>
@@ -451,11 +559,27 @@
     </div>
 
     <script>
-        if (localStorage.getItem('cookiesAccepted') === 'true')
+        function loadGA() {
+            if (window._gaLoaded) return;
+            window._gaLoaded = true;
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-VKQXKCJVND');
+        }
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
+        }
         document.getElementById('accept-cookies').addEventListener('click', function() {
             localStorage.setItem('cookiesAccepted', 'true');
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
         });
     </script>
 </body>

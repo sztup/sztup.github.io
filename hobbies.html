@@ -6,17 +6,18 @@
     <title>Hobbies — Zsofia Sztupinszki</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="Winter hiking leader at MIT Outing Club and road cyclist. Outdoor adventures by Zsofia Sztupinszki.">
+    <meta name="description" content="Winter Hiking Leader at MIT Outing Club and road cyclist covering 3,000–4,000 km annually. Outdoor adventures by Zsofia Sztupinszki, cancer genomics researcher.">
     <link rel="canonical" href="https://sztup.github.io/hobbies.html">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Zsofia Sztupinszki, M.D., Ph.D.">
     <meta property="og:title" content="Hobbies — Zsofia Sztupinszki">
-    <meta property="og:description" content="Winter hiking leader at MIT Outing Club and road cyclist. Outdoor adventures by Zsofia Sztupinszki.">
+    <meta property="og:description" content="Winter Hiking Leader at MIT Outing Club and road cyclist covering 3,000–4,000 km annually. Outdoor adventures by Zsofia Sztupinszki.">
     <meta property="og:url" content="https://sztup.github.io/hobbies.html">
     <meta property="og:image" content="https://sztup.github.io/images/PhotoCV.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hobbies — Zsofia Sztupinszki">
-    <meta name="twitter:description" content="Winter hiking leader at MIT Outing Club and road cyclist. Outdoor adventures by Zsofia Sztupinszki.">
+    <meta name="twitter:description" content="Winter Hiking Leader at MIT Outing Club and road cyclist covering 3,000–4,000 km annually. Outdoor adventures by Zsofia Sztupinszki.">
     <meta name="twitter:image" content="https://sztup.github.io/images/PhotoCV.jpg">
 
     <!-- Fonts -->
@@ -25,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 
     <style>
         :root {
@@ -92,15 +93,20 @@
             background: var(--btn);
             color: #fff;
         }
+
+        .prose p { margin-bottom: 1.25rem; }
     </style>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VKQXKCJVND');
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://sztup.github.io/"},
+            {"@type":"ListItem","position":2,"name":"Hobbies","item":"https://sztup.github.io/hobbies.html"}
+        ]
+    }
     </script>
 </head>
 <body class="min-h-screen bg-white">
@@ -110,7 +116,7 @@
             <div class="flex justify-between items-center">
                 <a href="index.html" style="font-family:'Playfair Display',serif;color:#e1dfdb;" class="text-lg font-bold tracking-wide">Zsofia Sztupinszki</a>
 
-                <label for="nav-toggle" class="md:hidden cursor-pointer text-white" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="md:hidden cursor-pointer text-white p-3 -mr-3" aria-label="Toggle navigation">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -142,16 +148,18 @@
             <!-- Winter Hiking -->
             <section class="mb-20">
                 <h2 class="text-2xl font-semibold mb-8" style="font-family: 'Playfair Display', serif; color: var(--text);">Winter Hiking</h2>
-                <div class="space-y-6">
-                    <p>I love hiking in challenging conditions, it's fun, and I really enjoy learning and using new skills. As a Winter Hiking Leader at MIT Outing Club (MITOC), I lead groups in the White Mountains. It's an amazing experience learning from the other leaders and introducing new people to winter hiking and convincing them that hiking below 5F can be a great experience.</p>
-                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <img src="images/PXL_20221231_182607570.jpg" alt="Winter summit view, Mount Washington — January 2023" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
-                            <p class="text-sm" style="color: var(--muted);">Mount Washington, Winter 2023</p>
-                        </div>
-                        <div class="space-y-2">
-                            <img src="images/IMG_2871.JPG" alt="Summit panorama during winter hike in the White Mountains" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
-                        </div>
+                <div class="prose space-y-4">
+                    <p>I love hiking in challenging conditions — it's one of the few activities where I can fully disconnect from work and focus entirely on the environment around me. As a certified Winter Hiking Leader at the MIT Outing Club (MITOC), I plan and lead group trips into the White Mountains of New Hampshire throughout the winter season, from November through March.</p>
+                    <p>The MITOC Winter Hiking Leader certification involves training in cold-weather safety, navigation, group management in alpine conditions, and emergency response. Leading groups means making real-time decisions about route adjustments, turn-around criteria, and managing the wide range of experience levels that show up on club trips. Mount Washington is a recurring destination — the summit weather station regularly records some of the harshest conditions in the northeastern United States, including hurricane-force winds and temperatures below -20°F (-29°C).</p>
+                    <p>What I enjoy most about leading trips is introducing people to the idea that hiking below 5°F can actually be a great experience. With the right gear and mindset, winter hiking offers something summer hiking doesn't: the trails are quieter, the views are crystalline, and the physical challenge of moving through deep snow builds a different kind of confidence. Over multiple seasons with MITOC, I have led trips of 4–12 people across a range of peaks in the Presidentials and Franconia Ridge.</p>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <img src="images/PXL_20221231_182607570.jpg" alt="Winter summit view, Mount Washington — January 2023" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
+                        <p class="text-sm" style="color: var(--muted);">Mount Washington, Winter 2023</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img src="images/IMG_2871.JPG" alt="Summit panorama during winter hike in the White Mountains" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
                     </div>
                 </div>
             </section>
@@ -159,15 +167,17 @@
             <!-- Cycling -->
             <section class="mb-20">
                 <h2 class="text-2xl font-semibold mb-8" style="font-family: 'Playfair Display', serif; color: var(--text);">Road Cycling</h2>
-                <div class="space-y-6">
-                    <p>Road cycling, covering 3000–4000 km annually, is also a sport where I can challenge myself and feel free.</p>
-                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <img src="images/IMG_2072.JPG" alt="Road cycling on a scenic route" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
-                        </div>
-                        <div class="space-y-2">
-                            <img src="images/IMG_2367.JPG" alt="Cycling on a scenic road" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
-                        </div>
+                <div class="prose space-y-4">
+                    <p>Road cycling is my other main sport outside of work. I cover 3,000–4,000 km annually on the bike, typically across a mix of longer endurance rides and faster interval sessions. There is something about the combination of sustained physical effort and forward motion through a landscape that creates a kind of mental clarity I don't find easily elsewhere.</p>
+                    <p>Cycling around the Boston area means working with a lot of varied terrain — from the flat coastal routes north of the city to the steeper hills heading west toward Concord and Lexington. On longer weekend rides, I extend out through the Massachusetts countryside where the traffic thins and the roads wind through small towns and farmland. The rhythm of a long ride is something I find genuinely restorative after weeks of dense reading and computation.</p>
+                    <p>The discipline of training for a cycling season — setting weekly distance goals, tracking progress, managing rest — also connects to how I think about research: iterative, data-informed, and patient. It helps that the feedback loop on a bike is much faster than in the lab.</p>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <img src="images/IMG_2072.JPG" alt="Road cycling on a scenic route" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="space-y-2">
+                        <img src="images/IMG_2367.JPG" alt="Cycling on a scenic road" width="1200" height="900" loading="lazy" class="w-full h-64 object-cover">
                     </div>
                 </div>
             </section>
@@ -177,7 +187,7 @@
     <!-- Footer -->
     <footer style="border-top:1px solid var(--cream);" class="mt-24 py-8">
         <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm" style="font-family:'Open Sans',sans-serif; color:var(--muted);">
-            <p>© 2025 Zsofia Sztupinszki, M.D., Ph.D.</p>
+            <p>© 2026 Zsofia Sztupinszki, M.D., Ph.D.</p>
             <nav aria-label="Footer navigation">
                 <ul class="flex gap-4 list-none">
                     <li><a href="index.html" style="color:var(--muted);" class="hover:underline">Home</a></li>
@@ -197,11 +207,27 @@
     </div>
 
     <script>
-        if (localStorage.getItem('cookiesAccepted') === 'true')
+        function loadGA() {
+            if (window._gaLoaded) return;
+            window._gaLoaded = true;
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-VKQXKCJVND');
+        }
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
+        }
         document.getElementById('accept-cookies').addEventListener('click', function() {
             localStorage.setItem('cookiesAccepted', 'true');
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
         });
     </script>
 </body>

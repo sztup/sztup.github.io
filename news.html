@@ -8,6 +8,7 @@
     <!-- SEO Meta -->
     <meta name="description" content="Recent publications, awards, and research updates from Zsofia Sztupinszki, cancer genomics researcher at Harvard Medical School.">
     <link rel="canonical" href="https://sztup.github.io/news.html">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Zsofia Sztupinszki, M.D., Ph.D.">
     <meta property="og:title" content="News & Updates — Zsofia Sztupinszki">
@@ -25,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 
     <style>
         :root {
@@ -94,13 +95,62 @@
         }
     </style>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VKQXKCJVND');
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://sztup.github.io/"},
+            {"@type":"ListItem","position":2,"name":"News & Updates","item":"https://sztup.github.io/news.html"}
+        ]
+    }
+    </script>
+
+    <!-- Schema.org: NewsArticle — February 2025 (confirmed DOI) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "AI combines histopathology tissue analysis and protein data to improve ovarian cancer treatment predictions",
+        "datePublished": "2025-02-01",
+        "url": "https://sztup.github.io/news.html",
+        "description": "International research team develops novel approach improving predictions of platinum-based chemotherapy response in High-Grade Serous Ovarian Cancer using pathological tissue images and proteomics data.",
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "publisher": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "about": {
+            "@type": "ScholarlyArticle",
+            "url": "https://doi.org/10.1038/s41698-025-00808-w",
+            "name": "Histopathology and proteomics are synergistic for high-grade serous ovarian cancer platinum response prediction",
+            "isPartOf": {"@type":"Periodical","name":"NPJ Precision Oncology"}
+        }
+    }
+    </script>
+
+    <!-- Schema.org: NewsArticle — October 2023 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer published in Nature Cancer",
+        "datePublished": "2023-10-01",
+        "url": "https://sztup.github.io/news.html",
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "publisher": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+    }
+    </script>
+
+    <!-- Schema.org: NewsArticle — January 2024 (Award) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Best Poster Award at DF/HCC Breast and Gynecologic Cancer Symposium",
+        "datePublished": "2024-01-01",
+        "url": "https://sztup.github.io/news.html",
+        "author": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"},
+        "publisher": {"@type":"Person","name":"Zsofia Sztupinszki","url":"https://sztup.github.io/"}
+    }
     </script>
 </head>
 <body class="min-h-screen bg-white">
@@ -110,7 +160,7 @@
             <div class="flex justify-between items-center">
                 <a href="index.html" style="font-family:'Playfair Display',serif;color:#e1dfdb;" class="text-lg font-bold tracking-wide">Zsofia Sztupinszki</a>
 
-                <label for="nav-toggle" class="md:hidden cursor-pointer text-white" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="md:hidden cursor-pointer text-white p-3 -mr-3" aria-label="Toggle navigation">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -142,7 +192,7 @@
             <div class="space-y-12">
                 <!-- Most Recent Publication -->
                 <article style="border-left: 2px solid var(--cream); padding-left: 1.25rem;">
-                    <time class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">February 2025</time>
+                    <time datetime="2025-02-01" class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">February 2025</time>
                     <h2 class="text-lg font-semibold mt-1 leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
                         AI combines histopathology tissue analysis and protein data to improve ovarian cancer treatment predictions
                     </h2>
@@ -157,45 +207,45 @@
 
                 <!-- Previous Publication -->
                 <article style="border-left: 2px solid var(--cream); padding-left: 1.25rem;">
-                    <time class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">October 2023</time>
+                    <time datetime="2023-10-01" class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">October 2023</time>
                     <h2 class="text-lg font-semibold mt-1 leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
                         New Publication in Nature Cancer
                     </h2>
                     <p class="mt-2 text-sm" style="color: var(--text); font-family: 'Open Sans', sans-serif;">
-                        Our paper "ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer" was published in Nature Cancer.
+                        Our paper "ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer" was published in Nature Cancer. The study demonstrates that ALK-derived peptide vaccination can reverse immune escape in ALK-positive NSCLC, restoring T-cell recognition of tumor cells and providing a potential therapeutic strategy for patients with ALK-rearranged lung cancer.
                     </p>
                 </article>
 
                 <!-- Award -->
                 <article style="border-left: 2px solid var(--cream); padding-left: 1.25rem;">
-                    <time class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">January 2024</time>
+                    <time datetime="2024-01-01" class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">January 2024</time>
                     <h2 class="text-lg font-semibold mt-1 leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
                         Best Poster Award
                     </h2>
                     <p class="mt-2 text-sm" style="color: var(--text); font-family: 'Open Sans', sans-serif;">
-                        Received the Best Poster Award at the DF/HCC Breast and Gynecologic Cancer Symposium.
+                        Received the Best Poster Award at the DF/HCC Breast and Gynecologic Cancer Symposium, presented by Dana-Farber/Harvard Cancer Center. The award recognized our work on identifying DNA repair deficiency biomarkers with clinical relevance for ovarian and breast cancer treatment stratification.
                     </p>
                 </article>
 
                 <!-- Conference -->
                 <article style="border-left: 2px solid var(--cream); padding-left: 1.25rem;">
-                    <time class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">December 2023</time>
+                    <time datetime="2023-12-01" class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">December 2023</time>
                     <h2 class="text-lg font-semibold mt-1 leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
-                        Conference Presentation
+                        Conference Presentation at Dana-Farber
                     </h2>
                     <p class="mt-2 text-sm" style="color: var(--text); font-family: 'Open Sans', sans-serif;">
-                        Presented our work on DNA repair deficiencies at the Annual Symposium on Cancer Research at Dana-Farber Cancer Institute.
+                        Presented our work on DNA repair deficiencies at the Annual Symposium on Cancer Research at Dana-Farber Cancer Institute, Boston. The presentation covered novel computational approaches for detecting homologous recombination deficiency (HRD) and nucleotide excision repair (NER) defects across multiple cancer types using whole-genome sequencing data.
                     </p>
                 </article>
 
                 <!-- Milestone -->
                 <article style="border-left: 2px solid var(--cream); padding-left: 1.25rem;">
-                    <time class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">September 2023</time>
+                    <time datetime="2023-09-01" class="text-xs uppercase tracking-widest" style="color: var(--muted); font-family: 'Open Sans', sans-serif;">September 2023</time>
                     <h2 class="text-lg font-semibold mt-1 leading-snug" style="font-family: 'Playfair Display', serif; color: var(--text);">
-                        Research Milestone
+                        Research Milestone: 160+ Citations for HRD Method
                     </h2>
                     <p class="mt-2 text-sm" style="color: var(--text); font-family: 'Open Sans', sans-serif;">
-                        Our method for estimating homologous recombination deficiency has now been cited in over 160 publications.
+                        Our method for estimating homologous recombination deficiency — implemented in the <a href="https://github.com/sztup/scarHRD" target="_blank" rel="noopener noreferrer" style="color: var(--text); text-decoration: underline;">scarHRD R package</a> — has now been cited in over 160 publications. The method is used by research groups worldwide to identify HRD-positive tumors, supporting companion diagnostic development for PARP inhibitor therapy in ovarian, breast, and prostate cancers.
                     </p>
                 </article>
             </div>
@@ -205,7 +255,7 @@
     <!-- Footer -->
     <footer style="border-top:1px solid var(--cream);" class="mt-24 py-8">
         <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm" style="font-family:'Open Sans',sans-serif; color:var(--muted);">
-            <p>© 2025 Zsofia Sztupinszki, M.D., Ph.D.</p>
+            <p>© 2026 Zsofia Sztupinszki, M.D., Ph.D.</p>
             <nav aria-label="Footer navigation">
                 <ul class="flex gap-4 list-none">
                     <li><a href="index.html" style="color:var(--muted);" class="hover:underline">Home</a></li>
@@ -225,11 +275,27 @@
     </div>
 
     <script>
-        if (localStorage.getItem('cookiesAccepted') === 'true')
+        function loadGA() {
+            if (window._gaLoaded) return;
+            window._gaLoaded = true;
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-VKQXKCJVND';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-VKQXKCJVND');
+        }
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
+        }
         document.getElementById('accept-cookies').addEventListener('click', function() {
             localStorage.setItem('cookiesAccepted', 'true');
             document.getElementById('cookie-banner').style.display = 'none';
+            loadGA();
         });
     </script>
 </body>

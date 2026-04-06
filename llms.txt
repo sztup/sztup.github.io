@@ -1,0 +1,47 @@
+# Zsofia Sztupinszki, M.D., Ph.D.
+
+> Research Fellow at Harvard Medical School and Boston Children's Hospital,
+> specializing in cancer genomics, DNA repair deficiencies, and precision medicine.
+
+Zsofia Sztupinszki is a physician-scientist and computational biologist at Harvard
+Medical School / Boston Children's Hospital (Computational Health Informatics Program)
+and the Danish Cancer Institute. She has authored 47 peer-reviewed publications with
+1,561 citations and an h-index of 22 (Google Scholar, 2025). Her primary research focus
+is identifying homologous recombination deficiency (HRD) and nucleotide excision repair
+(NER) deficiencies through bioinformatics methods applied to cancer genomics data. She
+developed the scarHRD R package, an open-source tool for estimating HRD from tumor
+sequencing data, which has been cited in over 160 publications. She also created TCGA
+Explorer (cancergeneanalytics.com), a no-code pan-cancer analysis platform covering all
+30 TCGA cancer types for gene expression, survival, immune infiltration, mutational
+signatures, GSEA, and ssGSEA pathway enrichment analyses. She holds patent
+WO2021195390A2 (Method for treating cancer).
+
+## Key Research Areas
+- Homologous Recombination Deficiency (HRD) detection and biomarkers
+- DNA repair deficiency signatures in prostate, ovarian, and bladder cancer
+- Cancer immunogenomics and checkpoint inhibitor response prediction
+- Machine learning applied to cancer genomics and precision oncology
+- Translational cancer research and companion diagnostics
+
+## Tools
+- [TCGA Explorer](https://cancergeneanalytics.com/): Free, no-code browser-based platform for pan-cancer gene analysis across all 30 TCGA cancer types. Analyses include gene expression (pan-cancer + normal vs tumor), survival (Cox regression, Kaplan-Meier, optimal cutoff), immune infiltration (TIMER2.0), mutational signatures (COSMIC v2/v3/Indel), differential expression (DESeq2 + GSEA), and ssGSEA pathway enrichment.
+- [scarHRD](https://github.com/sztup/scarHRD): Open-source R package for estimating homologous recombination deficiency from tumor sequencing data. Implements three HRD metrics: loss of heterozygosity (HRD-LOH), large-scale state transitions (LST), and telomeric allelic imbalance (TAI).
+
+## Selected Publications
+- Oz Kilim et al. Histopathology and proteomics are synergistic for high-grade serous ovarian cancer platinum response prediction. NPJ Precision Oncology, 2025. https://doi.org/10.1038/s41698-025-00808-w
+- ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer. Nature Cancer, 2023. https://www.nature.com/articles/s43018-023-00591-2
+- Comparative Assessment of Diagnostic Homologous Recombination Deficiency associated mutational signatures in ovarian cancer. Clinical Cancer Research, 2021. https://doi.org/10.1158/1078-0432.CCR-21-0981
+- Detection of Molecular Signatures of Homologous Recombination Deficiency in Prostate Cancer with or without BRCA1/2 Mutations. Clinical Cancer Research, 2020. https://aacrjournals.org/clincancerres/article/26/11/2673/284540/Detection-of-Molecular-Signatures-of-Homologous
+- Cross-reactivity between tumor MHC class I-restricted antigens and an enterococcal bacteriophage. Science, 2020. https://www.science.org/doi/10.1126/science.aax0701
+
+## Affiliations
+- Harvard Medical School, Boston, MA — Research Fellow
+- Boston Children's Hospital, Computational Health Informatics Program — Research Fellow
+- Danish Cancer Institute — Affiliate Researcher
+
+## Profiles
+- Google Scholar: https://scholar.google.com/citations?user=ZNe91SwAAAAJ
+- LinkedIn: https://www.linkedin.com/in/zsofia-sztupinszki/
+- Harvard Catalyst: https://connects.catalyst.harvard.edu/Profiles/profile/164664481
+- GitHub: https://github.com/sztup
+- ORCID: https://orcid.org/0000-0002-8691-4086
